@@ -166,7 +166,7 @@ double black_scholes :: call(double s,double k,double sigma, double r, double t)
 	
 	d2=d_1-sigma*root_t; 
 	
-	value=s*N.normdist(d_1)-k*exp(-r*t)*N.cnd(d2);
+	value=s*N.cnd(d_1)-k*exp(-r*t)*N.cnd(d2);
 	
 	return value;
 	
