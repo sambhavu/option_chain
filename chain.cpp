@@ -187,7 +187,7 @@ double black_scholes :: put(double s,double k,double sigma, double r, double t)
 	
 	d2=d_1-sigma*root_t; 
 	
-	value=k*exp(-r*t)*N.cnd(-d2)-s*N.normdist(-d_1);
+	value=k*exp(-r*t)*N.cnd(-d2)-s*N.cnd(-d_1);
 	
 	return value;
 	
